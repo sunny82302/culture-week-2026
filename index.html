@@ -6,6 +6,8 @@
     <title>B/S/H/ 2026 Culture Week - 站點導引與預約系統</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- QRCode.js 套件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; }
@@ -47,7 +49,7 @@
                 <div>
                     <h2 class="text-2xl font-black text-gray-900 flex items-center gap-2">
                         <span class="w-3 h-8 bg-orange-600 rounded-full inline-block"></span>
-                        線下路演體驗：打卡地圖 (The Roadshow Journey)
+                        打卡地圖 (The Roadshow Journey)
                     </h2>
                     <p class="text-sm text-gray-500 mt-1">點擊下方站點按鈕，即可快速查看各站點詳細規則與預約！</p>
                 </div>
@@ -63,28 +65,28 @@
                             <span class="w-6 h-6 rounded-full bg-white text-blue-600 font-black flex items-center justify-center text-xs hotspot-pin">1</span>
                             <div>
                                 <span class="block text-[10px] text-blue-200 uppercase">Station 1</span>
-                                <span class="font-bold text-xs">文化站 (Connect 勇敢對話)</span>
+                                <span class="font-bold text-xs">文化站 (Lumina & 大富翁)</span>
                             </div>
                         </a>
                         <a href="#station-2" class="flex items-center gap-2 bg-orange-600 hover:bg-orange-500 text-white p-3 rounded-xl transition shadow-md">
                             <span class="w-6 h-6 rounded-full bg-white text-orange-600 font-black flex items-center justify-center text-xs hotspot-pin">2</span>
                             <div>
                                 <span class="block text-[10px] text-orange-200 uppercase">Station 2</span>
-                                <span class="font-bold text-xs">成長站 (Discover 探索自己)</span>
+                                <span class="font-bold text-xs">成長站 (勇敢對話)</span>
                             </div>
                         </a>
                         <a href="#station-3" class="flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white p-3 rounded-xl transition shadow-md">
                             <span class="w-6 h-6 rounded-full bg-white text-purple-600 font-black flex items-center justify-center text-xs hotspot-pin">3</span>
                             <div>
                                 <span class="block text-[10px] text-purple-200 uppercase">Station 3</span>
-                                <span class="font-bold text-xs">福利站 (Recharge 幸福續航)</span>
+                                <span class="font-bold text-xs">充電站 (身心放鬆)</span>
                             </div>
                         </a>
                         <a href="#station-4" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white p-3 rounded-xl transition shadow-md">
                             <span class="w-6 h-6 rounded-full bg-white text-indigo-600 font-black flex items-center justify-center text-xs hotspot-pin">4</span>
                             <div>
                                 <span class="block text-[10px] text-indigo-200 uppercase">Station 4</span>
-                                <span class="font-bold text-xs">數智站 (Future AI創新)</span>
+                                <span class="font-bold text-xs">數智站 (AI Passport)</span>
                             </div>
                         </a>
                     </div>
@@ -92,7 +94,7 @@
             </div>
         </section>
 
-        <!-- 區塊二：四大站點詳細遊戲規則 -->
+        <!-- 區塊二：四大站點詳細規則與完整時程 -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             <!-- Station 1: 文化站 -->
@@ -102,22 +104,24 @@
                         <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Station 1 | 10.12 & 10.14</span>
                         <span class="text-xs font-semibold text-gray-400">Discover 探索自己 / Connect 勇敢對話</span>
                     </div>
-                    <h3 class="text-2xl font-black text-gray-900 mb-2">文化站：Lumina Spark & HPC 大富翁</h3>
+                    <h3 class="text-2xl font-black text-gray-900 mb-2">文化站：Lumina Spark & HPC大富翁線上電競賽</h3>
                     
                     <div class="bg-blue-50/50 rounded-2xl p-4 border border-blue-100 mb-6 space-y-3 text-sm text-gray-700">
                         <div>
-                            <p class="font-bold text-blue-900">🎨 10.12 (MON) 10:00-11:00 ｜ 10F會議室</p>
+                            <p class="font-bold text-blue-900">🎨 10.12 (MON) ｜ 10F會議室</p>
                             <p class="text-xs font-semibold text-gray-800 mt-0.5">《玩轉你的特質色彩！Lumina Spark × HPC 打造專屬成功學》</p>
+                            <p class="text-xs text-gray-600 mt-1">分兩場：<strong>早上 10:00-12:30</strong> 或 <strong>下午 14:00-16:30</strong>。<br><span class="text-orange-600 font-bold">⚠️ 注意：每個人只能報名一場，且需要現場出席！</span></p>
                         </div>
                         <div class="border-t border-blue-200 pt-3">
                             <p class="font-bold text-blue-900">🎲 10.14 (WED) 10:00-17:00 ｜ 10F會議室</p>
-                            <p class="text-xs font-semibold text-gray-800 mt-0.5">《玩轉 HPC！一起解鎖文化週任務》（HPC 大富翁）</p>
+                            <p class="text-xs font-semibold text-gray-800 mt-0.5">《HPC大富翁線上電競賽》</p>
+                            <p class="text-xs text-gray-600 mt-1">組隊競速挑戰！快來預約搶位，爭取最高榮譽與豐富獎勵（見下方預約說明）。</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <a href="#booking-section" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition shadow-md">
-                        📅 前往預約 10/14 HPC 大富翁
+                        📅 前往預約 HPC大富翁線上電競賽
                     </a>
                 </div>
             </div>
@@ -132,22 +136,32 @@
                     <h3 class="text-2xl font-black text-gray-900 mb-2">成長站：勇敢對話</h3>
                     <p class="text-xs text-orange-600 font-semibold mb-3">📍 地點：線上 (Teams) ｜ 11:00-12:00</p>
                     <p class="text-gray-600 text-sm mb-4"><strong>《不再聊個寂寞！勇敢對話，透過回饋成就更好的彼此》</strong></p>
+                    
+                    <div class="bg-orange-50/50 rounded-2xl p-4 border border-orange-100 mb-6 space-y-2 text-sm text-gray-700">
+                        <p><strong>💡 亮點介紹：</strong></p>
+                        <p class="text-xs text-gray-600">給護談怕得罪人？聽反饋又怕被打分數？掌握兼具溫度與建設性的交流心法，打破溝通藩籬，將真誠對話化為賦能與成就彼此的養分！</p>
+                    </div>
                 </div>
                 <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded-xl text-center">
                     💡 線上參與，歡迎準時加入！
                 </div>
             </div>
 
-            <!-- Station 3: 福利站 -->
+            <!-- Station 3: 充電站 -->
             <div id="station-3" class="bg-white rounded-3xl shadow-lg p-7 border-t-8 border-purple-600 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
                         <span class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full">Station 3 | 10.16 FRI</span>
                         <span class="text-xs font-semibold text-gray-400">Recharge 幸福續航</span>
                     </div>
-                    <h3 class="text-2xl font-black text-gray-900 mb-2">福利站：身心放鬆術</h3>
+                    <h3 class="text-2xl font-black text-gray-900 mb-2">充電站：身心放鬆術</h3>
                     <p class="text-xs text-purple-600 font-semibold mb-3">📍 地點：線上 (Teams) ｜ 11:00-12:00</p>
                     <p class="text-gray-600 text-sm mb-4"><strong>《在 AI 時代找回心節奏：解開資訊爆炸下的身心放鬆術》</strong></p>
+                    
+                    <div class="bg-purple-50/50 rounded-2xl p-4 border border-purple-100 mb-6 space-y-2 text-sm text-gray-700">
+                        <p><strong>💡 亮點介紹：</strong></p>
+                        <p class="text-xs text-gray-600">訊息讀不完、焦慮關不掉？帶你解開自律神經緊繃的密碼，體驗實用的身心調節與放鬆藝術，在快節奏的 AI 時代找回平靜心動奏！</p>
+                    </div>
                 </div>
                 <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded-xl text-center">
                     🎁 給自己一段專屬的 Reset 充電時光！
@@ -161,37 +175,47 @@
                         <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Station 4 | 10.15 THU</span>
                         <span class="text-xs font-semibold text-gray-400">Future AI創新</span>
                     </div>
-                    <h3 class="text-2xl font-black text-gray-900 mb-2">數智站：AI Hackathon</h3>
+                    <h3 class="text-2xl font-black text-gray-900 mb-2">數智站：AI Passport & 黑克松選手應援</h3>
                     <p class="text-xs text-indigo-600 font-semibold mb-3">📍 地點：CS 大會議室 ｜ 10:00-16:00</p>
-                    <p class="text-gray-600 text-sm mb-4"><strong>《AI Hackathon | From Ideas to Impact》</strong></p>
+                    <p class="text-gray-600 text-sm mb-4"><strong>探索數智未來，為參賽選手加油！</strong></p>
+                    
+                    <div class="bg-indigo-50/50 rounded-2xl p-4 border border-indigo-100 mb-6 space-y-3 text-sm text-gray-700">
+                        <div>
+                            <p class="font-bold text-indigo-900">🚀 AI Passport 數智護照連線</p>
+                            <p class="text-xs text-gray-600 mt-1">同步進行 AI 數位工具學習與任務解鎖，完成指定挑戰拿證書！</p>
+                        </div>
+                        <div class="border-t border-indigo-200 pt-2">
+                            <p class="font-bold text-indigo-900">💻 AI Hackathon（選手專屬）</p>
+                            <p class="text-xs text-gray-600 mt-1">⚠️ <strong>注意：AI黑克松僅供選手參與，不開放現場觀摩喔！</strong> 邀請大家一起在心中或透過社群給我們的參賽選手多多鼓勵，打造最強 AI 創意！</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded-xl text-center">
-                    🚀 歡迎至現場觀摩與參與投票！
+                    🔥 期待選手們的精彩成果！
                 </div>
             </div>
 
         </section>
 
-        <!-- 區塊三：10/14 HPC大富翁即時預約系統與即時狀態看板 -->
+        <!-- 區塊三：10/14 HPC大富翁線上電競賽預約系統與獎勵說明 -->
         <section id="booking-section" class="bg-white rounded-3xl shadow-2xl p-6 md:p-10 border border-blue-100">
             <div class="max-w-3xl mx-auto">
                 <div class="text-center mb-8">
-                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Culture Week 專屬活動</span>
-                    <h2 class="text-3xl font-black text-gray-900 mt-2">🎲 10/14 HPC 大富翁線上預約系統</h2>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Culture Week 壓軸亮點</span>
+                    <h2 class="text-3xl font-black text-gray-900 mt-2">🎲 10/14 HPC大富翁線上電競賽</h2>
                     <p class="text-gray-600 text-sm mt-2">
-                        活動日期：10/14 (三) 10:00-17:00 ｜ 每時段每組別限額 1 組（A組 / B組），每組 3~4 人。
+                        活動日期：10/14 (三) 10:00-17:00 ｜ 每時段開放 <strong class="text-blue-600">2 組</strong>（A組 / B組），每組限制 <strong class="text-blue-600">3 ~ 4 人</strong>。
                     </p>
                 </div>
 
-                <!-- 即時時段狀態表 (小行事曆/看板) -->
-                <div class="mb-8 bg-blue-50/60 p-5 rounded-2xl border border-blue-100">
-                    <h3 class="text-sm font-bold text-blue-900 mb-3 flex items-center justify-between">
-                        <span>📊 即時時段預約狀態看板</span>
-                        <span id="loadingStatus" class="text-xs font-normal text-blue-600 animate-pulse">正在同步最新狀態...</span>
+                <!-- 獎勵吸引力專區 -->
+                <div class="mb-8 bg-gradient-to-r from-amber-500 to-orange-500 text-white p-6 rounded-2xl shadow-lg text-center space-y-2">
+                    <h3 class="text-xl font-black flex items-center justify-center gap-2">
+                        🏆 冠軍與優勝大獎等你來拿！
                     </h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs" id="statusGrid">
-                        <!-- 動態填入時段狀態 -->
-                    </div>
+                    <p class="text-sm text-white/95">
+                        本屆大富翁將選出表現最優異的 <strong class="underline">前 3 組優秀團隊</strong>！冠軍隊伍可獲得精美大獎與榮譽證書，每位參賽者還有完賽神祕小禮物，快揪夥伴們一起來組隊踢館！
+                    </p>
                 </div>
 
                 <!-- 預約表單 -->
@@ -237,7 +261,7 @@
                         </select>
                     </div>
 
-                    <button type="submit" id="submitBtn" class="w-full bsh-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 transition transform active:scale-95 text-lg">
+                    <button type="submit" class="w-full bsh-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 transition transform active:scale-95 text-lg">
                         🚀 確認送出預約
                     </button>
                 </form>
@@ -246,9 +270,19 @@
                 <div id="successMessage" class="hidden mt-6 p-6 bg-green-50 border border-green-200 text-green-800 rounded-2xl text-center space-y-2">
                     <h3 class="text-xl font-bold">🎉 預約登記成功！</h3>
                     <p id="successDetails" class="text-sm"></p>
-                    <p class="text-xs text-green-600">系統已記錄，預約資料已成功同步至 Google 試算表！</p>
+                    <p class="text-xs text-green-600">系統已記錄，預約資料已成功同步至 Google 試算表！請於 10/14 準時至 10F會議室報到參賽！</p>
                 </div>
             </div>
+        </section>
+
+        <!-- 區塊四：內嵌 QR Code 專區 -->
+        <section class="bg-white rounded-3xl shadow-xl p-8 max-w-md mx-auto text-center border border-gray-100">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">📱 手機快速掃描造訪</h3>
+            <p class="text-xs text-gray-500 mb-4">歡迎使用手機相機掃描下方 QR Code，立即查看站點導引或進行預約！</p>
+            <div class="flex justify-center">
+                <div id="qrcode" class="p-3 bg-white border-2 border-orange-100 rounded-2xl shadow-inner inline-block"></div>
+            </div>
+            <p id="currentUrlText" class="text-[11px] text-gray-400 mt-3 break-all"></p>
         </section>
 
     </main>
@@ -261,79 +295,23 @@
         </div>
     </footer>
 
-    <!-- 前端互動與即時狀態同步 JavaScript -->
+    <!-- 前端互動 JavaScript -->
     <script>
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyEShxBpTQ0uN-iHikZc6eoWPQG-5i0_riOtYKphTrv27sY0RyN4HbbfNPJGV40f2IiKQ/exec";
-        const timeSlots = ["10:00~10:40", "11:00~11:40", "13:00~13:40", "14:00~14:40", "15:00~15:40", "16:00~16:40"];
-        let bookedData = [];
+        const targetUrl = window.location.href;
+        document.getElementById('currentUrlText').innerText = "當前網址：" + targetUrl;
 
-        // 載入網頁時抓取 Google Sheet 已預約資料
-        function fetchBookings() {
-            fetch(GOOGLE_SCRIPT_URL)
-                .then(res => res.json())
-                .then(data => {
-                    bookedData = data;
-                    renderStatusBoard();
-                    updateFormAvailability();
-                    document.getElementById('loadingStatusinnerText') ? document.getElementById('loadingStatusinnerText').innerText = "已即時同步" : null;
-                    document.getElementById('loadingStatus').innerText = "🟢 狀態已即時同步";
-                })
-                .catch(err => {
-                    console.error("無法取得預約狀態", err);
-                    document.getElementById('loadingStatus').innerText = "⚠️ 狀態同步離線（可正常預約）";
-                });
-        }
+        new QRCode(document.getElementById("qrcode"), {
+            text: targetUrl,
+            width: 180,
+            height: 180,
+            colorDark : "#1e293b",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
 
-        // 渲染視覺化即時看板 (小行事曆)
-        function renderStatusBoard() {
-            const grid = document.getElementById('statusGrid');
-            grid.innerHTML = '';
-
-            timeSlots.forEach(slot => {
-                const aBooked = bookedData.some(b => b.timeSlot === slot && b.groupSlot === "A組");
-                const bBooked = bookedData.some(b => b.timeSlot === slot && b.groupSlot === "B組");
-
-                const card = document.createElement('div');
-                card.className = "bg-white p-3 rounded-xl border border-blue-100 shadow-xs flex flex-col justify-between";
-                card.innerHTML = `
-                    <div class="font-bold text-gray-800 border-b pb-1 mb-1 text-center">${slot}</div>
-                    <div class="flex justify-between text-[11px] mt-1">
-                        <span class="px-2 py-0.5 rounded font-semibold ${aBooked ? 'bg-red-100 text-red-600 line-through' : 'bg-green-100 text-green-700'}">A組: ${aBooked ? '已額滿' : '可預約'}</span>
-                        <span class="px-2 py-0.5 rounded font-semibold ${bBooked ? 'bg-red-100 text-red-600 line-through' : 'bg-green-100 text-green-700'}">B組: ${bBooked ? '已額滿' : '可預約'}</span>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        // 檢查當前選擇的時段與組別是否已被預約
-        function updateFormAvailability() {
-            const timeSelect = document.getElementById('timeSlot');
-            const groupSelect = document.getElementById('groupSlot');
-            const selectedTime = timeSelect.value;
-            const selectedGroup = groupSelect.value;
-
-            const isAlreadyBooked = bookedData.some(b => b.timeSlot === selectedTime && b.groupSlot === selectedGroup);
-            const submitBtn = document.getElementById('submitBtn');
-
-            if (isAlreadyBooked) {
-                submitBtn.disabled = true;
-                submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
-                submitBtn.innerText = `❌ 該時段 (${selectedTime} - ${selectedGroup}) 已被預約，請選擇其他時段！`;
-            } else {
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-                submitBtn.innerText = "🚀 確認送出預約";
-            }
-        }
-
-        document.getElementById('timeSlot').addEventListener('change', updateFormAvailability);
-        document.getElementById('groupSlot').addEventListener('change', updateFormAvailability);
-
-        // 提交表單後重新整理看板與狀態
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             const formData = {
-                leaderName: document.getElementById('leaderName').value,
+                leaderName: document.getElementById('leaderName',).value,
                 department: document.getElementById('department').value,
                 partySize: document.getElementById('partySize').value,
                 groupSlot: document.getElementById('groupSlot').value,
@@ -342,11 +320,7 @@
 
             setTimeout(() => {
                 showSuccess(formData);
-                // 模擬暫存並重新抓取更新
-                bookedData.push({ timeSlot: formData.timeSlot, groupSlot: formData.groupSlot });
-                renderStatusBoard();
-                updateFormAvailability();
-            }, 800);
+            }, 500);
         });
 
         function showSuccess(data) {
@@ -357,9 +331,6 @@
             successDiv.scrollIntoView({ behavior: 'smooth' });
             document.getElementById('bookingForm').reset();
         }
-
-        // 頁面載入時執行一次抓取
-        fetchBookings();
     </script>
 </body>
 </html>
