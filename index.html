@@ -12,13 +12,6 @@
         .bsh-gradient {
             background: linear-gradient(135deg, #1e40af 0%, #7c3aed 35%, #ea580c 70%, #f59e0b 100%);
         }
-        @keyframes pulse-glow {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7); }
-            50% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(234, 88, 12, 0); }
-        }
-        .hotspot-pin {
-            animation: pulse-glow 2s infinite;
-        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col justify-between">
@@ -59,33 +52,17 @@
                 
                 <div class="p-4 bg-orange-50 border-t border-orange-100 rounded-b-2xl">
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        <a href="#station-1" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-xl transition shadow-md">
-                            <span class="w-6 h-6 rounded-full bg-white text-blue-600 font-black flex items-center justify-center text-xs hotspot-pin">1</span>
-                            <div>
-                                <span class="block text-[10px] text-blue-200 uppercase">Station 1</span>
-                                <span class="font-bold text-xs">文化站 (HPC大富翁)</span>
-                            </div>
+                        <a href="#station-1" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-xl transition shadow-md font-bold text-sm text-center">
+                            文化站 (HPC大富翁)
                         </a>
-                        <a href="#station-2" class="flex items-center gap-2 bg-orange-600 hover:bg-orange-500 text-white p-3 rounded-xl transition shadow-md">
-                            <span class="w-6 h-6 rounded-full bg-white text-orange-600 font-black flex items-center justify-center text-xs hotspot-pin">2</span>
-                            <div>
-                                <span class="block text-[10px] text-orange-200 uppercase">Station 2</span>
-                                <span class="font-bold text-xs">成長站 (Lumina & 對話)</span>
-                            </div>
+                        <a href="#station-2" class="flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-500 text-white p-3 rounded-xl transition shadow-md font-bold text-sm text-center">
+                            成長站 (Lumina & 對話)
                         </a>
-                        <a href="#station-3" class="flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white p-3 rounded-xl transition shadow-md">
-                            <span class="w-6 h-6 rounded-full bg-white text-purple-600 font-black flex items-center justify-center text-xs hotspot-pin">3</span>
-                            <div>
-                                <span class="block text-[10px] text-purple-200 uppercase">Station 3</span>
-                                <span class="font-bold text-xs">充電站 (身心放鬆)</span>
-                            </div>
+                        <a href="#station-3" class="flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-500 text-white p-3 rounded-xl transition shadow-md font-bold text-sm text-center">
+                            充電站 (身心放鬆)
                         </a>
-                        <a href="#station-4" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white p-3 rounded-xl transition shadow-md">
-                            <span class="w-6 h-6 rounded-full bg-white text-indigo-600 font-black flex items-center justify-center text-xs hotspot-pin">4</span>
-                            <div>
-                                <span class="block text-[10px] text-indigo-200 uppercase">Station 4</span>
-                                <span class="font-bold text-xs">智能體驗站 (AI Passport)</span>
-                            </div>
+                        <a href="#station-4" class="flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white p-3 rounded-xl transition shadow-md font-bold text-sm text-center">
+                            智能體驗站 (AI Passport)
                         </a>
                     </div>
                 </div>
@@ -95,11 +72,11 @@
         <!-- 區塊二：四大站點詳細規則與完整時程 -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <!-- Station 1: 文化站 -->
+            <!-- 文化站 -->
             <div id="station-1" class="bg-white rounded-3xl shadow-lg p-7 border-t-8 border-blue-600 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Station 1 | 10.14 WED</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">文化站 | 10.14 WED</span>
                         <span class="text-xs font-semibold text-gray-400">Resonance 激发更深共鸣</span>
                     </div>
                     <h3 class="text-2xl font-black text-gray-900 mb-2">文化站：HPC大富翁線上電競賽</h3>
@@ -119,12 +96,12 @@
                 </div>
             </div>
 
-            <!-- Station 2: 成長站 -->
+            <!-- 成長站 -->
             <div id="station-2" class="bg-white rounded-3xl shadow-lg p-7 border-t-8 border-orange-500 flex flex-col justify-between">
                 <div class="space-y-6">
                     <div>
                         <div class="flex justify-between items-start mb-4">
-                            <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full">Station 2 | 10.12 & 10.13</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full">成長站 | 10.12 & 10.13</span>
                             <span class="text-xs font-semibold text-gray-400">Growth 成長站 / Discover & Connect</span>
                         </div>
                         <h3 class="text-2xl font-black text-gray-900 mb-2">成長站：Lumina Spark & 勇敢對話</h3>
@@ -132,12 +109,13 @@
 
                     <!-- Lumina Spark 區塊 -->
                     <div class="bg-orange-50/50 rounded-2xl p-4 border border-orange-100 space-y-2 text-sm text-gray-700">
-                        <p class="font-bold text-orange-900">🎨 10.12 (MON) ｜ 10F會議室</p>
+                        <p class="font-bold text-orange-900">🎨 10.12 (MON) ｜ CS大會議室</p>
                         <p class="text-xs font-semibold text-gray-800">《玩轉你的特質色彩！Lumina Spark × HPC 打造專屬成功學》</p>
                         <p class="text-xs text-gray-600">分兩場次：<br>• 上場：<strong>10:00 - 12:30</strong><br>• 下場：<strong>14:00 - 16:30</strong><br><span class="text-red-600 font-bold">⚠️ 注意：每個人只能報名一場，且需要現場出席！</span></p>
                         <a href="https://forms.cloud.microsoft/e/75mnie9iim" target="_blank" class="block w-full text-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-2.5 rounded-xl transition text-xs shadow mt-2">
                             📝 點擊前往 Lumina 課程報名表單
                         </a>
+                        <p class="text-[11px] text-gray-500 text-center mt-1">*(需登入 Outlook，請使用公司裝置點開)*</p>
                     </div>
 
                     <!-- 勇敢對話 區塊 -->
@@ -152,11 +130,11 @@
                 </div>
             </div>
 
-            <!-- Station 3: 充電站 -->
+            <!-- 充電站 -->
             <div id="station-3" class="bg-white rounded-3xl shadow-lg p-7 border-t-8 border-purple-600 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full">Station 3 | 10.16 FRI</span>
+                        <span class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full">充電站 | 10.16 FRI</span>
                         <span class="text-xs font-semibold text-gray-400">Recharge 幸福續航</span>
                     </div>
                     <h3 class="text-2xl font-black text-gray-900 mb-2">充電站：身心放鬆術</h3>
@@ -173,16 +151,16 @@
                 </div>
             </div>
 
-            <!-- Station 4: 智能體驗站 -->
+            <!-- 智能體驗站 -->
             <div id="station-4" class="bg-white rounded-3xl shadow-lg p-7 border-t-8 border-indigo-600 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Station 4 | 10.15 THU</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">智能體驗站 | 10.15 THU</span>
                         <span class="text-xs font-semibold text-gray-400">Future AI創新</span>
                     </div>
                     <h3 class="text-2xl font-black text-gray-900 mb-2">智能體驗站：AI Passport & 選手應援</h3>
                     <p class="text-xs text-indigo-600 font-semibold mb-3">📍 地點：CS 大會議室 ｜ 10:00-16:00</p>
-                    <p class="text-gray-600 text-sm mb-4"><strong>探索數智未來，為 AI 黑克松選手加油！</strong></p>
+                    <p class="text-gray-600 text-sm mb-4"><strong>探索數智未來，為 AI 黑客松選手加油！</strong></p>
                     
                     <div class="bg-indigo-50/50 rounded-2xl p-4 border border-indigo-100 mb-6 space-y-3 text-sm text-gray-700">
                         <div>
@@ -206,7 +184,6 @@
         <section id="booking-section" class="bg-white rounded-3xl shadow-2xl p-6 md:p-10 border border-blue-100">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-8">
-                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Culture Week 壓軸亮點</span>
                     <h2 class="text-3xl font-black text-gray-900 mt-2">🎲 10/14 HPC大富翁線上電競賽預約</h2>
                     <p class="text-gray-600 text-sm mt-2">
                         活動日期：10/14 (三) 10:00-17:00 ｜ 每時段設有 <strong class="text-blue-600">A組、B組</strong> 兩組名額，每組限制 <strong class="text-blue-600">3 ~ 4 人</strong>。
@@ -307,7 +284,6 @@
 
         let bookedData = {};
 
-        // 頁面載入時立刻先渲染預設看板（確保表單與看板第一時間顯示）
         renderDashboard();
 
         function fetchSheetData() {
@@ -332,7 +308,7 @@
                 })
                 .catch(error => {
                     console.error('Error fetching sheet data:', error);
-                    document.getElementById('syncStatus').innerText = "● Google Sheet 連線異常 (顯示本地暫存)";
+                    document.getElementById('syncStatus').innerText = "● Google Sheet 連線異常";
                 });
         }
 
@@ -378,10 +354,8 @@
             });
         }
 
-        // 背景非同步向 Google Sheet 抓取最新資料
         fetchSheetData();
 
-        // 提交表單事件
         document.getElementById('bookingForm').addEventListener('submit', function(e) {
             const timeSlot = document.getElementById('timeSlot').value;
             const groupSlot = document.getElementById('groupSlot').value;
